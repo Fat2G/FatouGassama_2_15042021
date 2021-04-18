@@ -1,4 +1,63 @@
+/* #0065FC bleu
+#DEEBFF bleu clair
+#F2F2F2 gris pour le fond */
+
+/* declaration body */
 body{
-  background-color: #fff  ;
-  font-family: Raleway;
+  font-family: 'Raleway', sans-serif; 
+  font-weight: 400;
+  background-color: #FFF; 
+  color: rgb(190, 0, 0);
+  border: 0px;
+  margin: 0px 50px;
+  padding: 0px;
+  position: relative;
+}
+/* -------------menu---------------- */
+/* regles menu */
+.menu{
+  float: right;
+  padding-right: 20px;
+}
+/* regles liste du menu */
+.menu li{
+  list-style: none;
+  display: inline;
+  font-size: 15px;
+  padding-left: 67px;
+  border-top-width: 48px;
+}
+.menu a{
+  text-decoration: none;
+}
+.menu a:link, a:visited{
+  color: inherit;
+}
+.menu1{
+  color: #0065FC;
+}
+.menu1 a:hover{
+  cursor: pointer;
+  color: #0065FC;
+  border-top:  solid 4px #0065FC;
+  padding-top: 15px;
+}
+.menu{
+  color: #000000;
+}
+.menu a:hover{
+  cursor: pointer;
+  color: #0065FC;
+  border-top:  solid 4px #0065FC;
+  padding-top: 15px;
+}
+.menu3{
+  color: #0065FC;
+  font-weight: 700;
+}
+.menu3 a:hover{
+  cursor: pointer;
+  color: #0065FC;
+  border-top:  solid 4px #0065FC;
+  padding-top: 15px;
 }
