@@ -7,23 +7,25 @@ body{
   font-family: 'Raleway', sans-serif; 
   font-weight: 400;
   background-color: #FFF; 
-  color: rgb(190, 0, 0);
+  color: rgb(0, 0, 0);
   border: 0px;
   margin: 0px 50px;
   padding: 0px;
   position: relative;
 }
-/* -------------menu---------------- */
+/* ---------------HEADER------------------ */
+/* ------- menu --------- */
 /* regles menu */
 .menu{
   float: right;
   padding-right: 20px;
+  margin-top: 20px;
 }
 /* regles liste du menu */
 .menu li{
   list-style: none;
   display: inline;
-  font-size: 15px;
+  font-size: 18px;
   padding-left: 67px;
   border-top-width: 48px;
 }
@@ -60,4 +62,68 @@ body{
   color: #0065FC;
   border-top:  solid 4px #0065FC;
   padding-top: 15px;
+}
+
+/* ---------------- logo --------------------- */
+.logo{
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  float: left;
+  margin-top: 30px;
+}
+
+/*----------- barre de recherche -------------  */
+.barre_recherche{
+  position: absolute;
+  margin-top: 198px;
+  height: 50px;
+  width: 420px;
+}
+.barre_recherche div:nth-child(1){
+  position: relative;
+  float: left;
+  width: 52px;
+  height: 100%;
+  background-color: #F2F2F2;
+  border-radius: 15px 0px 0px 15px;
+}
+#gps_icone{
+  position: inherit;
+  font-size: 20px;
+  color: #000;
+  text-align: center;
+  line-height: 50px;
+}
+.barre_recherche div:nth-child(2){
+  position: relative;
+  height: 46px;
+  float: left;
+  padding: 0px 18px 0px 18px;
+  width: 198px; 
+  border: solid #F2F2F2 2px;
+}
+input{
+  position: relative;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  width: inherit;
+  height: 46px;
+  color: #000;
+  font-weight: 700;
+  font-size: 15px;
+}
+.barre_recherche div:nth-child(3){
+  position: relative;
+  float: left;
+  width: 124px;
+  height: inherit;
+  color: #fff;
+  font-weight: 700;
+  background-color: #0065FC;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 0px 15px 15px 0px;
 }
