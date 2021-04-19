@@ -42,16 +42,16 @@ body{
   cursor: pointer;
   color: #0065FC;
   border-top:  solid 4px #0065FC;
-  padding-top: 15px;
+  padding-top: 33px;
 }
 .menu{
   color: #000000;
 }
-.menu a:hover{
+.menu2 a:hover{
   cursor: pointer;
-  color: #0065FC;
+  color: #000000;
   border-top:  solid 4px #0065FC;
-  padding-top: 15px;
+  padding-top: 33px;
 }
 .menu3{
   color: #0065FC;
@@ -61,7 +61,7 @@ body{
   cursor: pointer;
   color: #0065FC;
   border-top:  solid 4px #0065FC;
-  padding-top: 15px;
+  padding-top: 33px;
 }
 
 /* ---------------- logo --------------------- */
@@ -72,6 +72,20 @@ body{
   border: 0px;
   float: left;
   margin-top: 30px;
+}
+
+/* -------------- textes------------ */
+.textes{
+  position: absolute;
+  float: left;
+  margin-top: 132px;
+}
+h1{
+  font-weight: 700;
+  font-size: 22px;
+}
+h2{
+  font-size: 15px;
 }
 
 /*----------- barre de recherche -------------  */
