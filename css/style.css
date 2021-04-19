@@ -17,6 +17,7 @@ body{
 /* ------- menu --------- */
 /* regles menu */
 .menu{
+  position: relative;
   float: right;
   padding-right: 20px;
   margin-top: 20px;
@@ -81,17 +82,19 @@ body{
   margin-top: 132px;
 }
 h1{
-  font-weight: 700;
+  margin-left: 1px;
+  font-weight: 800;
   font-size: 22px;
 }
-h2{
-  font-size: 15px;
+h2{  
+  margin-left: 2px;
+  font-weight: 400;
+  font-size: 16px;
 }
-
 /*----------- barre de recherche -------------  */
 .barre_recherche{
   position: absolute;
-  margin-top: 198px;
+  margin-top: 220px;
   height: 50px;
   width: 420px;
 }
@@ -104,9 +107,9 @@ h2{
   border-radius: 15px 0px 0px 15px;
 }
 #gps_icone{
-  position: inherit;
   font-size: 20px;
   color: #000;
+  margin: auto;
   text-align: center;
   line-height: 50px;
 }
@@ -127,7 +130,7 @@ input{
   height: 46px;
   color: #000;
   font-weight: 700;
-  font-size: 15px;
+  font-size: 18px;
 }
 .barre_recherche div:nth-child(3){
   position: relative;
