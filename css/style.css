@@ -280,23 +280,8 @@ input{
   font-size: 50px;
   margin-left: 11px;
 }
-/*------------------MAIN--------------- */
-.part1{
-  position: absolute;
-  font-size: 15px;
-  font-weight: 700;
-  background-color: #c7c7c7;
-  border-radius: 30px;
-  height: 626px;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-}
-.galerie1{
-  
-  background-color: #FFF;
-  border-radius: 30px;
-}
 /*------------------FOOTER------------- */
+
 .footer{
   position: absolute;
   margin: 0px;
@@ -307,4 +292,13 @@ input{
   bottom: 0px;
   left: 0px;
   background-color:#c7c7c7;
+}
+.foot_grid{
+  position: -webkit-sticky;
+  margin-left: 50px;
+  font-size: 15px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  margin-top: 25px;
+  
 }
