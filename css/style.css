@@ -1,6 +1,7 @@
 /* #0065FC bleu
 #DEEBFF bleu clair
-#F2F2F2 gris pour le fond */
+#F2F2F2 gris pour le fond 
+<i class="fas fa-star"> */
 
 /* declaration body */
 body{
@@ -11,13 +12,11 @@ body{
   border: 0px;
   margin: 0px 50px;
   padding: 0px;
-  position: relative;
 }
 /* ---------------HEADER------------------ */
 /* ------- menu --------- */
 /* regles menu */
 .menu{
-  position: relative;
   float: right;
   padding-right: 20px;
   margin-top: 20px;
@@ -64,10 +63,8 @@ body{
   border-top:  solid 4px #0065FC;
   padding-top: 33px;
 }
-
 /* ---------------- logo --------------------- */
 .logo{
-  position: relative;
   margin: 0px;
   padding: 0px;
   border: 0px;
@@ -99,7 +96,6 @@ h2{
   width: 420px;
 }
 .barre_recherche div:nth-child(1){
-  position: relative;
   float: left;
   width: 52px;
   height: 100%;
@@ -114,7 +110,6 @@ h2{
   line-height: 50px;
 }
 .barre_recherche div:nth-child(2){
-  position: relative;
   height: 46px;
   float: left;
   padding: 0px 18px 0px 18px;
@@ -122,7 +117,6 @@ h2{
   border: solid #F2F2F2 2px;
 }
 input{
-  position: relative;
   border: none;
   outline: none;
   box-sizing: border-box;
@@ -133,7 +127,6 @@ input{
   font-size: 18px;
 }
 .barre_recherche div:nth-child(3){
-  position: relative;
   float: left;
   width: 124px;
   height: inherit;
@@ -143,4 +136,111 @@ input{
   text-align: center;
   line-height: 50px;
   border-radius: 0px 15px 15px 0px;
+}
+
+/*--------------filtres-------------- */
+.filtres{
+  font-size: 17px ;
+  font-weight: 700;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  column-gap: 20px;
+  float: left;
+  position: absolute;
+  margin-top: 297px;
+ }
+ #fil_0{
+   line-height: 46px;
+ }
+/* Economique */
+#fil_1{
+  border: solid #c7c7c7 2px;
+  width: 190px;
+  height: 46px;
+  border-radius: 30px;
+}
+#eco_icone{
+  color: #0065FC;
+  font-size: 18px;
+  border-radius: 50%;
+  line-height: 50px;
+  text-align: center;
+  background-color: #DEEBFF;  
+  height: 50px;
+  width: 50px;
+  float: left;
+  transform: translateX(-3px) translateY(-2px);
+}
+#eco_texte{
+  line-height: 46px;
+  transform: translateX(14px) ; 
+}
+/* Familial */
+#fil_2{
+  border: solid #c7c7c7 2px;
+  width: 148px;
+  height: 46px;
+  border-radius: 30px;
+}
+#fam_icone{
+  color: #0065FC;
+  font-size: 18px;
+  border-radius: 50%;
+  line-height: 50px;
+  text-align: center;
+  background-color: #DEEBFF;  
+  height: 50px;
+  width: 50px;
+  float: left;
+  transform: translateX(-3px) translateY(-2px);
+}
+#fam_texte{
+  line-height: 46px;
+  transform: translateX(14px) ; 
+}
+/* Romantique */
+#fil_3{
+  border: solid #c7c7c7 2px;
+  width: 180px;
+  height: 46px;
+  border-radius: 30px;
+}
+#rom_icone{
+  color: #0065FC;
+  font-size: 18px;
+  border-radius: 50%;
+  line-height: 50px;
+  text-align: center;
+  background-color: #DEEBFF;  
+  height: 50px;
+  width: 50px;
+  float: left;
+  transform: translateX(-3px) translateY(-2px);
+}
+#rom_texte{
+  line-height: 46px;
+  transform: translateX(14px) ; 
+}
+/* Animaux autorisés */
+#fil_4{
+  border: solid #c7c7c7 2px;
+  width: 238px;
+  height: 46px;
+  border-radius: 30px;
+}
+#ani_icone{
+  color: #0065FC;
+  font-size: 18px;
+  border-radius: 50%;
+  line-height: 50px;
+  text-align: center;
+  background-color: #DEEBFF;  
+  height: 50px;
+  width: 50px;
+  float: left;
+  transform: translateX(-3px) translateY(-2px);
+}
+#ani_texte{
+  line-height: 46px;
+  transform: translateX(14px) ; 
 }
