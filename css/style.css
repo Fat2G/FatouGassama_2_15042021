@@ -1,7 +1,8 @@
 /* #0065FC bleu
 #DEEBFF bleu clair
 #F2F2F2 gris pour le fond 
-<i class="fas fa-star"> */
+<i class="fas fa-star"> 
+<i class="fas fa-chart-line"></i>  */
 
 /* declaration body */
 body{
@@ -159,6 +160,9 @@ input{
   height: 46px;
   border-radius: 30px;
 }
+#fil_1:hover{
+  box-shadow: 0px 5px 5px 0px rgb(0, 101, 252, 0.5);
+} 
 #eco_icone{
   color: #0065FC;
   font-size: 18px;
@@ -182,6 +186,9 @@ input{
   height: 46px;
   border-radius: 30px;
 }
+#fil_2:hover{
+  box-shadow: 0px 5px 5px 0px rgb(0, 101, 252, 0.5);
+} 
 #fam_icone{
   color: #0065FC;
   font-size: 18px;
@@ -205,6 +212,9 @@ input{
   height: 46px;
   border-radius: 30px;
 }
+#fil_3:hover{
+  box-shadow: 0px 5px 5px 0px rgb(0, 101, 252, 0.5);
+} 
 #rom_icone{
   color: #0065FC;
   font-size: 18px;
@@ -228,6 +238,9 @@ input{
   height: 46px;
   border-radius: 30px;
 }
+#fil_4:hover{
+  box-shadow: 0px 5px 5px 0px rgb(0, 101, 252, 0.5);
+} 
 #ani_icone{
   color: #0065FC;
   font-size: 18px;
@@ -266,4 +279,32 @@ input{
   float: left;
   font-size: 50px;
   margin-left: 11px;
+}
+/*------------------MAIN--------------- */
+.part1{
+  position: absolute;
+  font-size: 15px;
+  font-weight: 700;
+  background-color: #c7c7c7;
+  border-radius: 30px;
+  height: 626px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.galerie1{
+  
+  background-color: #FFF;
+  border-radius: 30px;
+}
+/*------------------FOOTER------------- */
+.footer{
+  position: absolute;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  width: 100%;
+  height: 218px;
+  bottom: 0px;
+  left: 0px;
+  background-color:#c7c7c7;
 }
