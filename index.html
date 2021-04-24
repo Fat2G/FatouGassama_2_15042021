@@ -15,11 +15,14 @@
 
 <body>
   <!---------- Header de la page web ------------->
-  <header>   
+  <header>  
+    <!-- logo Reservia -->
+    <figure class="logo">
+      <a href="index.html"><img src="img/logo.png" width="150px" height="auto" alt="logo"></a>
+    </figure>  
     <!-- navigation menu lignes avec ancrage-->
     <nav>
-      <div class="menu">
-        <ul>
+        <ul class="menu">
           <li class="menu1">
             <a href="#hebergements">Hébergements</a> 
           </li>
@@ -29,15 +32,12 @@
           <li class="menu3">
             <a href="">S'inscrire</a>
           </li>
-        </ul>      
-      </div>
+        </ul>     
     </nav>
-    
-    <!-- logo Reservia -->
-    <figure class="logo">
-      <!-- <a href="index.html"> --><img src="img/logo.png" width="150px" height="auto" alt="logo"></a>
-    </figure> 
+  </header>
 
+  <!-------------- main de la page web ----------->
+  <main>
     <!-- Titres -->
     <div class="textes">
       <h1>Trouvez votre hébergement pour des vacances de rêve</h1> <!-- titre -->
@@ -52,7 +52,7 @@
         </div> 
       </div>
       <div>
-        <input type="text" name="box" placeholder="Ville, Pays">
+        <input class="recherche_input" type="text" name="box" placeholder="Ville, Pays">
       </div>
       <div> Rechercher </div>
     </div>    
@@ -99,26 +99,9 @@
         <h2>Plus de 500 logements sont disponibles dans cette ville</h2>
       </div>      
     </div>
-  </header>
-
-  <main>
-    <section class="main">
-      <div class="part1">
-        <div>Hébergements à Marseille</div>
-        <div id="galerie1">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-        <div>Afficher plus</div>
-      </div>
-
-    </section>
   </main>
 
+<!------------------footer----------------> 
   <footer class="footer">
     <div class="foot_grid">
       <div>

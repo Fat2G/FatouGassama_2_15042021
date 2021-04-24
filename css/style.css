@@ -8,27 +8,38 @@
 body{
   font-family: 'Raleway', sans-serif; 
   font-weight: 400;
+  font-size: 16px;
   background-color: #FFF; 
   color: rgb(0, 0, 0);
   border: 0px;
-  margin: 0px 50px;
+  margin: 0px;
   padding: 0px;
 }
 /* ---------------HEADER------------------ */
 /* ------- menu --------- */
 /* regles menu */
-.menu{
-  float: right;
-  padding-right: 20px;
-  margin-top: 20px;
+header{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 250px;
+  margin: 0px 50px;
+}
+/* ---------------- logo --------------------- */
+.logo{
+  margin: 0px;
+  margin-top: 50px;
 }
 /* regles liste du menu */
+.menu {
+  margin-top: 33px; 
+  display: grid ;
+  grid-template-columns: repeat(3,1fr);
+  width: min-content;
+  grid-gap: 67px;
+  float: right;
+}
 .menu li{
   list-style: none;
-  display: inline;
-  font-size: 18px;
-  padding-left: 67px;
-  border-top-width: 48px;
 }
 .menu a{
   text-decoration: none;
@@ -38,70 +49,65 @@ body{
 }
 .menu1{
   color: #0065FC;
+  text-align: end;
 }
 .menu1 a:hover{
   cursor: pointer;
   color: #0065FC;
   border-top:  solid 4px #0065FC;
-  padding-top: 33px;
+  padding-top: 30px;
 }
-.menu{
-  color: #000000;
+.menu2{
+  text-align: end;
 }
 .menu2 a:hover{
   cursor: pointer;
   color: #000000;
   border-top:  solid 4px #0065FC;
-  padding-top: 33px;
+  padding-top: 30px;
 }
 .menu3{
   color: #0065FC;
   font-weight: 700;
+  text-align: end;
 }
 .menu3 a:hover{
   cursor: pointer;
   color: #0065FC;
   border-top:  solid 4px #0065FC;
-  padding-top: 33px;
+  padding-top: 30px;
 }
-/* ---------------- logo --------------------- */
-.logo{
-  margin: 0px;
-  padding: 0px;
-  border: 0px;
-  float: left;
-  margin-top: 30px;
-}
-
+/* -------------------MAIN----------------------- */
 /* -------------- textes------------ */
-.textes{
-  position: absolute;
-  float: left;
-  margin-top: 132px;
+main{
+  margin: 0px 50px;
 }
-h1{
+.textes{
+  margin-top: 50px;
+}
+.textes h1{
   margin-left: 1px;
   font-weight: 800;
-  font-size: 22px;
+  font-size: 21px;
 }
-h2{  
+.textes h2{  
   margin-left: 2px;
   font-weight: 400;
   font-size: 16px;
 }
 /*----------- barre de recherche -------------  */
 .barre_recherche{
-  position: absolute;
-  margin-top: 220px;
+  margin-top: 20px;
   height: 50px;
   width: 420px;
+  display: flex;
 }
 .barre_recherche div:nth-child(1){
-  float: left;
   width: 52px;
   height: 100%;
   background-color: #F2F2F2;
   border-radius: 15px 0px 0px 15px;
+  align-items: left;
 }
 #gps_icone{
   font-size: 20px;
@@ -112,12 +118,12 @@ h2{
 }
 .barre_recherche div:nth-child(2){
   height: 46px;
-  float: left;
   padding: 0px 18px 0px 18px;
   width: 198px; 
   border: solid #F2F2F2 2px;
+  align-items: left;
 }
-input{
+.recherche_input{
   border: none;
   outline: none;
   box-sizing: border-box;
@@ -127,8 +133,12 @@ input{
   font-weight: 700;
   font-size: 18px;
 }
+/* changement couleur du input */
+::placeholder { 
+  color: #000;
+  opacity: 1; /* adaptation pour Firefox */
+}
 .barre_recherche div:nth-child(3){
-  float: left;
   width: 124px;
   height: inherit;
   color: #fff;
@@ -137,18 +147,19 @@ input{
   text-align: center;
   line-height: 50px;
   border-radius: 0px 15px 15px 0px;
+  align-items: left;
+
 }
 
 /*--------------filtres-------------- */
 .filtres{
+  margin-top: 33px;
   font-size: 17px ;
   font-weight: 700;
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  column-gap: 20px;
-  float: left;
-  position: absolute;
-  margin-top: 297px;
+  grid-template-columns: repeat(5, 1fr);
+  width: min-content;
+  column-gap: 24px; 
  }
  #fil_0{
    line-height: 46px;
@@ -156,12 +167,13 @@ input{
 /* Economique */
 #fil_1{
   border: solid #c7c7c7 2px;
-  width: 190px;
+  width: 184px;
   height: 46px;
-  border-radius: 30px;
+  border-radius: 25px;
 }
 #fil_1:hover{
   box-shadow: 0px 5px 5px 0px rgb(0, 101, 252, 0.5);
+  cursor: pointer;
 } 
 #eco_icone{
   color: #0065FC;
@@ -170,24 +182,25 @@ input{
   line-height: 50px;
   text-align: center;
   background-color: #DEEBFF;  
-  height: 50px;
-  width: 50px;
+  height: 49px;
+  width: 49px;
   float: left;
   transform: translateX(-3px) translateY(-2px);
 }
 #eco_texte{
   line-height: 46px;
-  transform: translateX(14px) ; 
+  transform: translateX(10px) ; 
 }
 /* Familial */
 #fil_2{
   border: solid #c7c7c7 2px;
-  width: 148px;
+  width: 143px;
   height: 46px;
   border-radius: 30px;
 }
 #fil_2:hover{
   box-shadow: 0px 5px 5px 0px rgb(0, 101, 252, 0.5);
+  cursor: pointer;
 } 
 #fam_icone{
   color: #0065FC;
@@ -196,24 +209,25 @@ input{
   line-height: 50px;
   text-align: center;
   background-color: #DEEBFF;  
-  height: 50px;
-  width: 50px;
+  height: 49px;
+  width: 49px;
   float: left;
   transform: translateX(-3px) translateY(-2px);
 }
 #fam_texte{
   line-height: 46px;
-  transform: translateX(14px) ; 
+  transform: translateX(10px) ; 
 }
 /* Romantique */
 #fil_3{
   border: solid #c7c7c7 2px;
-  width: 180px;
+  width: 175px;
   height: 46px;
   border-radius: 30px;
 }
 #fil_3:hover{
   box-shadow: 0px 5px 5px 0px rgb(0, 101, 252, 0.5);
+  cursor: pointer;
 } 
 #rom_icone{
   color: #0065FC;
@@ -222,24 +236,25 @@ input{
   line-height: 50px;
   text-align: center;
   background-color: #DEEBFF;  
-  height: 50px;
-  width: 50px;
+  height: 49px;
+  width: 49px;
   float: left;
   transform: translateX(-3px) translateY(-2px);
 }
 #rom_texte{
   line-height: 46px;
-  transform: translateX(14px) ; 
+  transform: translateX(10px) ; 
 }
 /* Animaux autorisés */
 #fil_4{
   border: solid #c7c7c7 2px;
-  width: 238px;
+  width: 228px;
   height: 46px;
   border-radius: 30px;
 }
 #fil_4:hover{
   box-shadow: 0px 5px 5px 0px rgb(0, 101, 252, 0.5);
+  cursor: pointer;
 } 
 #ani_icone{
   color: #0065FC;
@@ -248,23 +263,24 @@ input{
   line-height: 50px;
   text-align: center;
   background-color: #DEEBFF;  
-  height: 50px;
-  width: 50px;
+  height: 49px;
+  width: 49px;
   float: left;
   transform: translateX(-3px) translateY(-2px);
 }
 #ani_texte{
   line-height: 46px;
-  transform: translateX(14px) ; 
+  transform: translateX(10px) ; 
 }
 
 /* ----------ligne texte info -------------- */
 .info{
-  position: absolute;
-  margin-top: 383px;
+  display: flex;
+  align-content: flex-start;
+  margin-top: 0px;
+  font-weight: 400;
  }
 #info_icone{
-  float: left;
   width: 24px;
   height: 24px;
   border: solid 2px #F2F2F2;
@@ -276,48 +292,71 @@ input{
   line-height: 24px;
 }
 #info_text{
-  float: left;
-  font-size: 50px;
+  font-size: 10px;
+  
   margin-left: 11px;
 }
-
-*------------------MAIN--------------- */
-.part1{
-  position: absolute;
-  font-size: 15px;
-  font-weight: 700;
-  background-color: #c7c7c7;
-  border-radius: 30px;
-  height: 626px;
+/* ------------galeries---------------- */
+.main{
   display: grid;
   grid-template-columns: 2fr 1fr;
+  grid-column-gap: 40px;
+  height: 576px;
 }
-.galerie1{
-  
-  background-color: #FFF;
+.part1{
+  /* position: absolute; */
+  font-size: 15px;
+  font-weight: 700;
+  background-color: #f2f2f2;
+  display: grid;
   border-radius: 30px;
+  width: auto;
+  padding: 40px;
+  
+  /* margin-top: 426px; */
 }
-/
-
-/*------------------FOOTER------------- */
-
-.footer{
-  position: absolute;
+.gal_gauche{
+  border: 0px;
   margin: 0px;
   padding: 0px;
-  border: 0px;
-  width: 100%;
+ }
+
+.galerie1{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr); 
+  grid-gap: 30px;
+ 
+}
+.galerie1 > div{
+  background-color: rgb(180, 32, 32);
+  border-radius: 15px;
+  width: 231px;
+  height: 184px;
+  padding: 5px;
+  
+}
+.aside{
+  display: grid;
+  grid-column-gap: 40px;
+  height: 576px;
+}
+.part2{
+  background-color: yellow;
+  grid-template-rows: repeat(3,1fr);
+  border-radius: 20px;
+  
+}
+
+/*------------------FOOTER------------- */
+.footer{
+  background-color:#f2f2f2;
   height: 218px;
-  bottom: 0px;
-  left: 0px;
-  background-color:#c7c7c7;
+
 }
 .foot_grid{
-  position: -webkit-sticky;
   margin-left: 50px;
-  font-size: 15px;
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  margin-top: 25px;
-  
+  padding-top: 25px;
 }
