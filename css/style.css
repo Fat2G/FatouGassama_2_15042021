@@ -1,8 +1,6 @@
 /* #0065FC bleu
 #DEEBFF bleu clair
-#F2F2F2 gris pour le fond 
-<i class="fas fa-star"> 
-<i class="fas fa-chart-line"></i>  */
+#F2F2F2 gris pour le fond */
 
 /* declaration body */
 body{
@@ -148,7 +146,6 @@ main{
   line-height: 50px;
   border-radius: 0px 15px 15px 0px;
   align-items: left;
-
 }
 
 /*--------------filtres-------------- */
@@ -182,8 +179,8 @@ main{
   line-height: 50px;
   text-align: center;
   background-color: #DEEBFF;  
-  height: 49px;
-  width: 49px;
+  height: 50px;
+  width: 50px;
   float: left;
   transform: translateX(-3px) translateY(-2px);
 }
@@ -209,8 +206,8 @@ main{
   line-height: 50px;
   text-align: center;
   background-color: #DEEBFF;  
-  height: 49px;
-  width: 49px;
+  height: 50px;
+  width: 50px;
   float: left;
   transform: translateX(-3px) translateY(-2px);
 }
@@ -236,8 +233,8 @@ main{
   line-height: 50px;
   text-align: center;
   background-color: #DEEBFF;  
-  height: 49px;
-  width: 49px;
+  height: 50px;
+  width: 50px;
   float: left;
   transform: translateX(-3px) translateY(-2px);
 }
@@ -263,8 +260,8 @@ main{
   line-height: 50px;
   text-align: center;
   background-color: #DEEBFF;  
-  height: 49px;
-  width: 49px;
+  height: 50px;
+  width: 50px;
   float: left;
   transform: translateX(-3px) translateY(-2px);
 }
@@ -277,8 +274,7 @@ main{
 .info{
   display: flex;
   align-content: flex-start;
-  margin-top: 0px;
-  font-weight: 400;
+  margin: 15px 0px 15px 10px;
  }
 #info_icone{
   width: 24px;
@@ -293,66 +289,333 @@ main{
 }
 #info_text{
   font-size: 10px;
-  
+  font-weight: 400;
   margin-left: 11px;
 }
-/* ------------galeries---------------- */
-.main{
+#info_text h2{
+  font-weight: 400;
+}
+/* ------------galeries hebergements---------------- */
+.partie_1 {
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-column-gap: 40px;
   height: 576px;
 }
-.part1{
-  /* position: absolute; */
-  font-size: 15px;
-  font-weight: 700;
-  background-color: #f2f2f2;
-  display: grid;
-  border-radius: 30px;
-  width: auto;
-  padding: 40px;
-  
-  /* margin-top: 426px; */
-}
-.gal_gauche{
-  border: 0px;
-  margin: 0px;
-  padding: 0px;
- }
-
+/* galerie gauche */
 .galerie1{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr); 
   grid-gap: 30px;
- 
 }
-.galerie1 > div{
-  background-color: rgb(180, 32, 32);
-  border-radius: 15px;
-  width: 231px;
-  height: 184px;
-  padding: 5px;
-  
-}
-.aside{
-  display: grid;
-  grid-column-gap: 40px;
-  height: 576px;
-}
-.part2{
-  background-color: yellow;
-  grid-template-rows: repeat(3,1fr);
+.galerie1 > article{
+  background-color: #fff;
   border-radius: 20px;
-  
+  width: 231px;
+  height: 200px;
+  padding: 5px; 
+  box-shadow: 0px 5px 15px -3px rgb(0, 0, 0, 0.4);
+}
+#hebergements{
+  background-color: #f2f2f2;
+  border-radius: 30px;
+  padding: 20px 40px;
+  width: fit-content;
+  height: 585px;
+}
+#hebergements h1{
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+#hebergements h2{
+  font-size: 16px;
+  margin: 10px ;
+}
+#hebergements h3{
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0px 0px 0px 10px;
+}
+#hebergements span{
+  font-weight: 700;
+}
+/* photos des chambres galerie droite */
+.img_A{
+  height: 114px;
+  margin: 0px;
+  overflow: hidden;
+  border-radius: 15px 15px 0px 0px;
+  object-fit: cover;
+}
+.img_A img{
+  width: 105%;
+  height: auto;
+  transform: translateX(-10px) translateY(-25px);
+}
+.img_B{
+  height: 114px;
+  margin: 0px;
+  overflow: hidden;
+  border-radius: 15px 15px 0px 0px;
+}
+.img_B img{
+  width: 106%;
+  height: auto;
+  transform: translateX(-8.5px) translateY(-24px);
+}
+.img_C{
+  height: 114px;
+  margin: 0px;
+  overflow: hidden;
+  border-radius: 15px 15px 0px 0px;
+}
+.img_C img{
+  width: 105%;
+  height: auto;
+  transform: translateX(-5px) translateY(-25px);
+}
+.img_D{
+  height: 114px;
+  margin: 0px;
+  overflow: hidden;
+  border-radius: 15px 15px 0px 0px;
+}
+.img_D img{
+  width: 104%;
+  height: auto;
+  transform: translateX(-5px) translateY(-55px);
+}
+.img_E{
+  height: 114px;
+  margin: 0px;
+  overflow: hidden;
+  border-radius: 15px 15px 0px 0px;
+}
+.img_E img{
+  width: 105%;
+  height: auto;
+  transform: translateX(-6px) translateY(-10px);
+}.img_F{
+  height: 114px;
+  margin: 0px;
+  overflow: hidden;
+  border-radius: 15px 15px 0px 0px;
+}
+.img_F img{
+  width: 104%;
+  height: auto;
+  transform: translateX(-6px) translateY(-123px);
 }
 
+/* stars A */
+.stars_A{
+  font-size: 12px;
+  margin: 10px 12px;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  width: min-content;
+  column-gap: 2px;
+  color: #0065FC;
+}
+#star_A5{
+  color: #c9c9c9;
+}
+/* stars B */
+.stars_B{
+  font-size: 12px;
+  margin: 10px 12px;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  width: min-content;
+  column-gap: 2px;
+  color: #0065FC;
+}
+/* stars C */
+.stars_C{
+  font-size: 12px;
+  margin: 10px 12px;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  width: min-content;
+  column-gap: 2px;
+  color: #0065FC;
+}
+#star_C5{
+  color: #c9c9c9;
+}
+/* stars D */
+.stars_D{
+  font-size: 12px;
+  margin: 10px 12px;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  width: min-content;
+  column-gap: 2px;
+  color: #0065FC;
+}
+#star_D4{
+  color: #c9c9c9;
+}
+#star_D5{
+  color: #c9c9c9;
+}
+/* stars E */
+.stars_E{
+  font-size: 12px;
+  margin: 10px 12px;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  width: min-content;
+  column-gap: 2px;
+  color: #0065FC;
+}
+#star_E5{
+  color: #c9c9c9;
+}
+/* stars F */
+.stars_F{
+  font-size: 12px;
+  margin: 10px 12px;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  width: min-content;
+  column-gap: 2px;
+  color: #0065FC;
+}
+.afficher_plus{
+  font-size: 18px;
+  font-weight: 700;
+  margin: 34px 0px;
+}
+
+/* galerie droite */
+.gal2_titre{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.contenu{
+  display: grid;
+  grid-template-columns: 127px 1fr;
+}
+.galerie2 > article{
+  background-color: #fff;
+  border-radius: 20px;
+  width: 333px;
+  height: 134px;
+  padding: 5px; 
+  box-shadow: 0px 5px 15px -3px rgb(0, 0, 0, 0.4);
+  margin-bottom: 33px;
+}
+#populaires{
+  background-color: #f2f2f2;
+  border-radius: 30px;
+  padding: 0px 40px;
+  width: fit-content;
+  height: 625px;
+}
+#populaires h1{
+  font-size: 22px;
+  margin-top: 39px;
+}
+#populaires h2{
+  font-size: 16px;
+  margin: 17px 0px 14px 21px;
+}
+#populaires h3{
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0px 0px 0px 21px;
+}
+#populaires span{
+  font-weight: 700;
+}
+#chart_icone{
+  font-size: 18px;
+  color: #000;
+  margin: 43px 0px 30px 0px;
+  text-align: end;  
+}
+/* photos des chambres galerie gauche */
+.img_G {
+  width: 127px;
+  height: 134px;
+  margin: 0px;
+  overflow: hidden;
+  border-radius: 15px 0px 0px 15px;
+}
+.img_G img{
+  width: 170%;
+  height: auto;
+  transform: translateX(-45px) translateY(-5px);
+}
+.img_H{
+  width: 127px;
+  height: 134px;
+  margin: 0px;
+  overflow: hidden;
+  border-radius: 15px 0px 0px 15px;
+}
+.img_H img{ 
+  width: 150%;
+  height: auto;
+  transform: translateX(-33px) translateY(-5px);
+}
+.img_I{
+  width: 127px;
+  height: 134px;
+  margin: 0px;
+  overflow: hidden;
+  border-radius: 15px 0px 0px 15px;
+}
+.img_I img{
+  width: 107%;
+  height: auto;
+  transform: translateX(-4px) translateY(-35px);
+}
+/* stars G */
+.stars_G{
+  font-size: 12px;
+  margin: 25px 0px 14px 21px;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  width: min-content;
+  column-gap: 2px;
+  color: #0065FC;
+}
+/* stars H */
+.stars_H{
+  font-size: 12px;
+  margin: 25px 0px 14px 21px;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  width: min-content;
+  column-gap: 2px;
+  color: #0065FC;
+}
+#star_H5{
+  color: #c9c9c9;
+}
+/* stars I */
+.stars_I{
+  font-size: 12px;
+  margin: 25px 0px 14px 21px;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  width: min-content;
+  column-gap: 2px;
+  color: #0065FC;
+}
+#star_I5{
+  color: #c9c9c9;
+}
 /*------------------FOOTER------------- */
 .footer{
   background-color:#f2f2f2;
   height: 218px;
-
+  width: 100%;
+  bottom: 0;
+  margin-top: 600px; /* normalement 60px */
 }
 .foot_grid{
   margin-left: 50px;
