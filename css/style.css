@@ -13,21 +13,22 @@ body{
   margin: 0px;
   padding: 0px;
 }
+a{
+  text-decoration: none;
+}
 /* ---------------HEADER------------------ */
-/* ------- menu --------- */
-/* regles menu */
 header{
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 250px;
-  margin: 0px 50px;
+  margin: 0px 50px;   
 }
-/* ---------------- logo --------------------- */
+/* ----- logo ----- */
 .logo{
   margin: 0px;
-  margin-top: 50px;
+  margin-top: 25px;
 }
-/* regles liste du menu */
+/*----- menu ----- */
 .menu {
   margin-top: 33px; 
   display: grid ;
@@ -35,53 +36,33 @@ header{
   width: min-content;
   grid-gap: 67px;
   float: right;
+  color: #0065FC;
 }
 .menu li{
   list-style: none;
 }
-.menu a{
-  text-decoration: none;
-}
 .menu a:link, a:visited{
   color: inherit;
 }
-.menu1{
-  color: #0065FC;
-  text-align: end;
-}
-.menu1 a:hover{
+.menu a:hover{
   cursor: pointer;
-  color: #0065FC;
   border-top:  solid 4px #0065FC;
   padding-top: 30px;
+  /* padding-left: 20px; */
 }
 .menu2{
-  text-align: end;
-}
-.menu2 a:hover{
-  cursor: pointer;
-  color: #000000;
-  border-top:  solid 4px #0065FC;
-  padding-top: 30px;
+  color: #000;
 }
 .menu3{
-  color: #0065FC;
   font-weight: 700;
-  text-align: end;
-}
-.menu3 a:hover{
-  cursor: pointer;
-  color: #0065FC;
-  border-top:  solid 4px #0065FC;
-  padding-top: 30px;
 }
 /* -------------------MAIN----------------------- */
-/* -------------- textes------------ */
 main{
   margin: 0px 50px;
 }
+/* ----- textes ----- */
 .textes{
-  margin-top: 50px;
+  margin-top: 35px;
 }
 .textes h1{
   margin-left: 1px;
@@ -93,7 +74,7 @@ main{
   font-weight: 400;
   font-size: 16px;
 }
-/*----------- barre de recherche -------------  */
+/*----- barre de recherche ----- */
 .barre_recherche{
   margin-top: 20px;
   height: 50px;
@@ -105,12 +86,9 @@ main{
   height: 100%;
   background-color: #F2F2F2;
   border-radius: 15px 0px 0px 15px;
-  align-items: left;
 }
 #gps_icone{
   font-size: 20px;
-  color: #000;
-  margin: auto;
   text-align: center;
   line-height: 50px;
 }
@@ -119,15 +97,12 @@ main{
   padding: 0px 18px 0px 18px;
   width: 198px; 
   border: solid #F2F2F2 2px;
-  align-items: left;
 }
 .recherche_input{
   border: none;
   outline: none;
   box-sizing: border-box;
-  width: inherit;
   height: 46px;
-  color: #000;
   font-weight: 700;
   font-size: 18px;
 }
@@ -145,10 +120,8 @@ main{
   text-align: center;
   line-height: 50px;
   border-radius: 0px 15px 15px 0px;
-  align-items: left;
 }
-
-/*--------------filtres-------------- */
+/*----- filtres ----- */
 .filtres{
   margin-top: 33px;
   font-size: 17px ;
@@ -157,120 +130,44 @@ main{
   grid-template-columns: repeat(5, 1fr);
   width: min-content;
   column-gap: 24px; 
+  line-height: 46px;
  }
- #fil_0{
-   line-height: 46px;
- }
-/* Economique */
-#fil_1{
-  border: solid #c7c7c7 2px;
+ .fil_icone{
+  color: #0065FC;
+  font-size: 18px;
+  border-radius: 50%;
+  line-height: 50px;
+  text-align: center;
+  background-color: #DEEBFF;  
+  height: 50px;
+  width: 50px;
+  float: left;
+  transform: translateX(-3px) translateY(-2px);
+}
+.fil_texte{
+  line-height: 46px;
+  transform: translateX(10px) ; 
+}
+.fil_content{
+  border: solid #d9d9d9 2px;
   width: 184px;
   height: 46px;
   border-radius: 25px;
 }
-#fil_1:hover{
-  box-shadow: 0px 5px 5px 0px rgb(0, 101, 252, 0.5);
-  cursor: pointer;
-} 
-#eco_icone{
-  color: #0065FC;
-  font-size: 18px;
-  border-radius: 50%;
-  line-height: 50px;
-  text-align: center;
-  background-color: #DEEBFF;  
-  height: 50px;
-  width: 50px;
-  float: left;
-  transform: translateX(-3px) translateY(-2px);
-}
-#eco_texte{
-  line-height: 46px;
-  transform: translateX(10px) ; 
-}
-/* Familial */
-#fil_2{
-  border: solid #c7c7c7 2px;
+.filtres div:nth-child(3){
   width: 143px;
-  height: 46px;
-  border-radius: 30px;
 }
-#fil_2:hover{
-  box-shadow: 0px 5px 5px 0px rgb(0, 101, 252, 0.5);
-  cursor: pointer;
-} 
-#fam_icone{
-  color: #0065FC;
-  font-size: 18px;
-  border-radius: 50%;
-  line-height: 50px;
-  text-align: center;
-  background-color: #DEEBFF;  
-  height: 50px;
-  width: 50px;
-  float: left;
-  transform: translateX(-3px) translateY(-2px);
-}
-#fam_texte{
-  line-height: 46px;
-  transform: translateX(10px) ; 
-}
-/* Romantique */
-#fil_3{
-  border: solid #c7c7c7 2px;
+.filtres div:nth-child(4){
   width: 175px;
-  height: 46px;
-  border-radius: 30px;
 }
-#fil_3:hover{
-  box-shadow: 0px 5px 5px 0px rgb(0, 101, 252, 0.5);
-  cursor: pointer;
-} 
-#rom_icone{
-  color: #0065FC;
-  font-size: 18px;
-  border-radius: 50%;
-  line-height: 50px;
-  text-align: center;
-  background-color: #DEEBFF;  
-  height: 50px;
-  width: 50px;
-  float: left;
-  transform: translateX(-3px) translateY(-2px);
-}
-#rom_texte{
-  line-height: 46px;
-  transform: translateX(10px) ; 
-}
-/* Animaux autorisés */
-#fil_4{
-  border: solid #c7c7c7 2px;
+.filtres div:nth-child(5){
   width: 228px;
-  height: 46px;
-  border-radius: 30px;
 }
-#fil_4:hover{
+.fil_content:hover{
   box-shadow: 0px 5px 5px 0px rgb(0, 101, 252, 0.5);
   cursor: pointer;
 } 
-#ani_icone{
-  color: #0065FC;
-  font-size: 18px;
-  border-radius: 50%;
-  line-height: 50px;
-  text-align: center;
-  background-color: #DEEBFF;  
-  height: 50px;
-  width: 50px;
-  float: left;
-  transform: translateX(-3px) translateY(-2px);
-}
-#ani_texte{
-  line-height: 46px;
-  transform: translateX(10px) ; 
-}
-
-/* ----------ligne texte info -------------- */
+/* ----- ligne texte info ----- */
 .info{
   display: flex;
   align-content: flex-start;
@@ -279,7 +176,7 @@ main{
 #info_icone{
   width: 24px;
   height: 24px;
-  border: solid 2px #F2F2F2;
+  border: solid 2px #d9d9d9;
   border-radius: 50%;
   font-size: 12px;
   color: #0065FC ;
@@ -295,27 +192,45 @@ main{
 #info_text h2{
   font-weight: 400;
 }
-/* ------------galeries hebergements---------------- */
+/* ----- galeries hebergements ----- */
 .partie_1 {
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-column-gap: 40px;
   height: 576px;
 }
+.partie_1 article{
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 5px; 
+  box-shadow: 0px 5px 15px -3px rgb(0, 0, 0, 0.4);
+}
+.partie_1 span{
+  font-weight: 700;
+}
+/* ----- stars ----- */
+.stars {
+  font-size: 12px;
+  margin: 8px 0px 6px 10px;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  width: min-content;
+  column-gap: 2px;
+  color: #d9d9d9;
+}
+.contenu .stars{
+  margin: 25px 0px 0px 21px
+}
+.stars_full 
+ {
+   color: #0065FC;
+  }
 /* galerie gauche */
 .galerie1{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr); 
   grid-gap: 30px;
-}
-.galerie1 > article{
-  background-color: #fff;
-  border-radius: 20px;
-  width: 231px;
-  height: 200px;
-  padding: 5px; 
-  box-shadow: 0px 5px 15px -3px rgb(0, 0, 0, 0.4);
 }
 #hebergements{
   background-color: #f2f2f2;
@@ -330,182 +245,48 @@ main{
 }
 #hebergements h2{
   font-size: 16px;
-  margin: 10px ;
+  margin: 8px 0px 0px 10px;
 }
 #hebergements h3{
   font-size: 14px;
   font-weight: 400;
-  margin: 0px 0px 0px 10px;
+  margin: 7px 0px 0px 10px;
 }
-#hebergements span{
-  font-weight: 700;
-}
-/* photos des chambres galerie droite */
-.img_A{
+.hotel img{
+  width: 100%;
   height: 114px;
-  margin: 0px;
-  overflow: hidden;
-  border-radius: 15px 15px 0px 0px;
   object-fit: cover;
-}
-.img_A img{
-  width: 105%;
-  height: auto;
-  transform: translateX(-10px) translateY(-25px);
-}
-.img_B{
-  height: 114px;
-  margin: 0px;
-  overflow: hidden;
   border-radius: 15px 15px 0px 0px;
-}
-.img_B img{
-  width: 106%;
-  height: auto;
-  transform: translateX(-8.5px) translateY(-24px);
-}
-.img_C{
-  height: 114px;
-  margin: 0px;
-  overflow: hidden;
-  border-radius: 15px 15px 0px 0px;
-}
-.img_C img{
-  width: 105%;
-  height: auto;
-  transform: translateX(-5px) translateY(-25px);
-}
-.img_D{
-  height: 114px;
-  margin: 0px;
-  overflow: hidden;
-  border-radius: 15px 15px 0px 0px;
-}
-.img_D img{
-  width: 104%;
-  height: auto;
-  transform: translateX(-5px) translateY(-55px);
-}
-.img_E{
-  height: 114px;
-  margin: 0px;
-  overflow: hidden;
-  border-radius: 15px 15px 0px 0px;
-}
-.img_E img{
-  width: 105%;
-  height: auto;
-  transform: translateX(-6px) translateY(-10px);
-}.img_F{
-  height: 114px;
-  margin: 0px;
-  overflow: hidden;
-  border-radius: 15px 15px 0px 0px;
-}
-.img_F img{
-  width: 104%;
-  height: auto;
-  transform: translateX(-6px) translateY(-123px);
-}
-
-/* stars A */
-.stars_A{
-  font-size: 12px;
-  margin: 10px 12px;
-  display: grid;
-  grid-template-columns: repeat(5,1fr);
-  width: min-content;
-  column-gap: 2px;
-  color: #0065FC;
-}
-#star_A5{
-  color: #c9c9c9;
-}
-/* stars B */
-.stars_B{
-  font-size: 12px;
-  margin: 10px 12px;
-  display: grid;
-  grid-template-columns: repeat(5,1fr);
-  width: min-content;
-  column-gap: 2px;
-  color: #0065FC;
-}
-/* stars C */
-.stars_C{
-  font-size: 12px;
-  margin: 10px 12px;
-  display: grid;
-  grid-template-columns: repeat(5,1fr);
-  width: min-content;
-  column-gap: 2px;
-  color: #0065FC;
-}
-#star_C5{
-  color: #c9c9c9;
-}
-/* stars D */
-.stars_D{
-  font-size: 12px;
-  margin: 10px 12px;
-  display: grid;
-  grid-template-columns: repeat(5,1fr);
-  width: min-content;
-  column-gap: 2px;
-  color: #0065FC;
-}
-#star_D4{
-  color: #c9c9c9;
-}
-#star_D5{
-  color: #c9c9c9;
-}
-/* stars E */
-.stars_E{
-  font-size: 12px;
-  margin: 10px 12px;
-  display: grid;
-  grid-template-columns: repeat(5,1fr);
-  width: min-content;
-  column-gap: 2px;
-  color: #0065FC;
-}
-#star_E5{
-  color: #c9c9c9;
-}
-/* stars F */
-.stars_F{
-  font-size: 12px;
-  margin: 10px 12px;
-  display: grid;
-  grid-template-columns: repeat(5,1fr);
-  width: min-content;
-  column-gap: 2px;
-  color: #0065FC;
 }
 .afficher_plus{
   font-size: 18px;
   font-weight: 700;
-  margin: 34px 0px;
+  margin-top: 42px;
 }
-
 /* galerie droite */
+.galerie2{
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 30px;
+  margin-top: 3px;
+}
+.galerie2 > article{
+  height: 134px;
+  /* width: 333px; */
+}
 .gal2_titre{
   display: grid;
   grid-template-columns: 2fr 1fr;
+  height: min-content;
+}
+.chart_icone{
+  font-size: 20px;
+  margin-top: 40px;
+  text-align: end;  
 }
 .contenu{
   display: grid;
   grid-template-columns: 127px 1fr;
-}
-.galerie2 > article{
-  background-color: #fff;
-  border-radius: 20px;
-  width: 333px;
-  height: 134px;
-  padding: 5px; 
-  box-shadow: 0px 5px 15px -3px rgb(0, 0, 0, 0.4);
-  margin-bottom: 33px;
 }
 #populaires{
   background-color: #f2f2f2;
@@ -516,98 +297,23 @@ main{
 }
 #populaires h1{
   font-size: 22px;
-  margin-top: 39px;
+  margin-top: 38px;
 }
 #populaires h2{
   font-size: 16px;
-  margin: 17px 0px 14px 21px;
+  margin: 17px 50px 14px 21px;
 }
 #populaires h3{
   font-size: 14px;
   font-weight: 400;
   margin: 0px 0px 0px 21px;
 }
-#populaires span{
-  font-weight: 700;
-}
-#chart_icone{
-  font-size: 18px;
-  color: #000;
-  margin: 43px 0px 30px 0px;
-  text-align: end;  
-}
 /* photos des chambres galerie gauche */
-.img_G {
-  width: 127px;
+.contenu img{
   height: 134px;
-  margin: 0px;
-  overflow: hidden;
+  width: 100%;
+  object-fit: cover;
   border-radius: 15px 0px 0px 15px;
-}
-.img_G img{
-  width: 170%;
-  height: auto;
-  transform: translateX(-45px) translateY(-5px);
-}
-.img_H{
-  width: 127px;
-  height: 134px;
-  margin: 0px;
-  overflow: hidden;
-  border-radius: 15px 0px 0px 15px;
-}
-.img_H img{ 
-  width: 150%;
-  height: auto;
-  transform: translateX(-33px) translateY(-5px);
-}
-.img_I{
-  width: 127px;
-  height: 134px;
-  margin: 0px;
-  overflow: hidden;
-  border-radius: 15px 0px 0px 15px;
-}
-.img_I img{
-  width: 107%;
-  height: auto;
-  transform: translateX(-4px) translateY(-35px);
-}
-/* stars G */
-.stars_G{
-  font-size: 12px;
-  margin: 25px 0px 14px 21px;
-  display: grid;
-  grid-template-columns: repeat(5,1fr);
-  width: min-content;
-  column-gap: 2px;
-  color: #0065FC;
-}
-/* stars H */
-.stars_H{
-  font-size: 12px;
-  margin: 25px 0px 14px 21px;
-  display: grid;
-  grid-template-columns: repeat(5,1fr);
-  width: min-content;
-  column-gap: 2px;
-  color: #0065FC;
-}
-#star_H5{
-  color: #c9c9c9;
-}
-/* stars I */
-.stars_I{
-  font-size: 12px;
-  margin: 25px 0px 14px 21px;
-  display: grid;
-  grid-template-columns: repeat(5,1fr);
-  width: min-content;
-  column-gap: 2px;
-  color: #0065FC;
-}
-#star_I5{
-  color: #c9c9c9;
 }
 /*------------------FOOTER------------- */
 .footer{
@@ -615,11 +321,15 @@ main{
   height: 218px;
   width: 100%;
   bottom: 0;
-  margin-top: 600px; /* normalement 60px */
+  margin-top: 60px;
 }
 .foot_grid{
   margin-left: 50px;
   display: grid;
   grid-template-columns: repeat(3,1fr);
   padding-top: 25px;
+  padding-left: 50px;
+  width: 1340px;
+  margin: auto;
 }
+
