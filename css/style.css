@@ -21,7 +21,6 @@ header{
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 250px;
-  /* margin: 0px 50px;   */
   max-width: 1340px; 
   margin: auto;
 }
@@ -43,6 +42,7 @@ header{
 .menu li{
   list-style: none;
   padding: 30px 25px 0px 25px;
+  border-top: 2px solid white;
 }
 .menu li:hover{
   cursor: pointer;
@@ -61,8 +61,8 @@ header{
   font-weight: 700;
 }
 /* -------------------MAIN----------------------- */
-main{
-  /* margin: 0px 50px; */
+main,
+aside{
   max-width: 1340px; 
   margin: auto;
 }
@@ -210,6 +210,7 @@ main{
   border-radius: 20px;
   padding: 5px; 
   box-shadow: 0px 5px 15px -3px rgb(0, 0, 0, 0.4);
+  position: relative;
 }
 .partie_1 span{
   font-weight: 700;
@@ -217,15 +218,14 @@ main{
 /* ----- stars ----- */
 .stars {
   font-size: 12px;
-  margin: 8px 0px 6px 10px;
   display: grid;
   grid-template-columns: repeat(5,1fr);
   width: min-content;
   column-gap: 2px;
   color: #d9d9d9;
-}
-.contenu .stars{
-  margin: 25px 0px 0px 21px
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
 }
 .stars_full 
  {
@@ -237,6 +237,7 @@ main{
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr); 
   grid-gap: 30px;
+  min-width: 236px;/* test */
 }
 #hebergements{
   background-color: #f2f2f2;
@@ -256,7 +257,7 @@ main{
 #hebergements h3{
   font-size: 14px;
   font-weight: 400;
-  margin: 7px 0px 0px 10px;
+  margin: 7px 0px 25px 10px;
 }
 .hotel img{
   width: 100%;
@@ -279,6 +280,7 @@ main{
 .galerie2 > article{
   height: 134px;
   /* width: 333px; */
+  min-width: 333px;
 }
 .gal2_titre{
   display: grid;
@@ -293,13 +295,19 @@ main{
 .contenu{
   display: grid;
   grid-template-columns: 127px 1fr;
+  position: relative;
+}
+.contenu .stars{
+  position: absolute;
+  bottom: 10px;
+  left: 148px;
 }
 #populaires{
   background-color: #f2f2f2;
   border-radius: 30px;
   padding: 0px 40px;
   width: fit-content;
-  height: 625px;
+  /* height: 625px; */
 }
 #populaires h1{
   font-size: 22px;
@@ -387,41 +395,32 @@ main{
   grid-template-rows: 156px 55px ;
 }
 /* parametres images */
-.img_pos_1{
+.img_pos_1,
+.img_pos_3{
   height: 120%;
   width: auto;
   object-fit: cover;
   object-position: -175px -20px;
 }
-.img_pos_2{
+.img_pos_2,
+.img_pos_4,
+.img_pos_5,
+.img_pos_6{
   width: 100%;
   height: auto;
   object-fit: cover;
   object-position: 0px -143px;
 }
 .img_pos_3{
-  height: 120%;
-  width: auto;
-  object-fit: cover;
   object-position: -191px -20px;
-  filter: brightness(1.2);/* test */
 }
 .img_pos_4{
-  width: 100%;
-  height: auto;
-  object-fit: cover;
   object-position: 0px -15px;
 }
 .img_pos_5{
-  width: 100%;
-  height: auto;
-  object-fit: cover;
   object-position: 0px -32px;
 }
 .img_pos_6{
-  width: 100%;
-  height: auto;
-  object-fit: cover;
   object-position: 0px -25px;
 }
 .gal3_img{
@@ -446,8 +445,7 @@ main{
   display: grid;
   grid-template-columns: repeat(3,1fr);
   padding-top: 25px;
-  padding-left: 50px;
-  width: 1340px;
   margin: auto;
+  max-width: 1340px;
 }
 
