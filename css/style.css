@@ -237,14 +237,11 @@ aside{
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr); 
   grid-gap: 30px;
-  min-width: 236px;/* test */
 }
 #hebergements{
   background-color: #f2f2f2;
   border-radius: 30px;
   padding: 20px 40px;
-  width: fit-content;
-  height: 585px;
 }
 #hebergements h1{
   font-size: 22px;
@@ -279,7 +276,6 @@ aside{
 }
 .galerie2 > article{
   height: 134px;
-  /* width: 333px; */
   min-width: 333px;
 }
 .gal2_titre{
@@ -306,8 +302,6 @@ aside{
   background-color: #f2f2f2;
   border-radius: 30px;
   padding: 0px 40px;
-  width: fit-content;
-  /* height: 625px; */
 }
 #populaires h1{
   font-size: 22px;
@@ -315,7 +309,7 @@ aside{
 }
 #populaires h2{
   font-size: 16px;
-  margin: 17px 50px 14px 21px;
+  margin: 17px 0px 14px 21px;
 }
 #populaires h3{
   font-size: 14px;
