@@ -74,6 +74,9 @@ aside{
 .textes{
   margin-top: 35px;
 }
+h1, h2, h3, h4{
+  color: #000;
+}
 .textes h1{
   margin-left: 1px;
   font-weight: 800;
@@ -425,8 +428,8 @@ aside{
   overflow: hidden;
   border-radius: 20px 20px 0px 0px;
 }
-.gal3_txt{
-  font-size: 17px;
+.gal3_txt h2{
+  font-size: 16px;
   font-weight: 700;
   margin-left: 17px;
 }
