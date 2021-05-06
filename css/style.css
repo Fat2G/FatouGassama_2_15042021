@@ -27,7 +27,11 @@ header{
 /* ----- logo ----- */
 .logo{
   margin: 0px;
-  margin-top: 25px;
+  margin-top: 28px;
+}
+.logo_img{
+  max-width: 19.5%;
+  height: auto;
 }
 /*----- menu ----- */
 .menu {
@@ -73,7 +77,7 @@ aside{
 .textes h1{
   margin-left: 1px;
   font-weight: 800;
-  font-size: 21px;
+  font-size: 22px;
 }
 .textes h2{  
   margin-left: 2px;
