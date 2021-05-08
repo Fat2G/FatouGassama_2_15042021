@@ -12,6 +12,7 @@ body{
   border: 0px;
   margin: 0px;
   padding: 0px;
+  width: auto;
 }
 a{
   text-decoration: none;
@@ -437,19 +438,29 @@ p{
   width: 100%;
   bottom: 0;
   margin-top: 60px;
+  
 }
 .foot_grid{
-  margin-left: 50px;
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  padding-top: 25px;
-  margin: auto;
+  padding-top: 10px;
+  margin: auto; 
   max-width: 1340px;
 }
 .foot_grid h3{
   font-size: 18px;
 }
-.foot_grid p{
-  font-size: 16px ;
+.foot_grid li{
+  font-size: 16px;
+  list-style: none;
+  margin-bottom: 18px;
 }
-
+.foot_li1{
+  padding-left: 0px
+}
+.foot_li2{
+  padding-left: 9px
+}
+.foot_li3{
+  padding-left: 28px
+}
