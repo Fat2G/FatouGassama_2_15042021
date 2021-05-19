@@ -1,8 +1,3 @@
-/* #0065FC bleu
-#DEEBFF bleu clair
-#F2F2F2 gris pour le fond */
-
-/* declaration body */
 body{
   font-family: 'Raleway', sans-serif; 
   font-weight: 400;
@@ -12,60 +7,69 @@ body{
   border: 0px;
   margin: 0px;
   padding: 0px;
-  width: auto;
+  max-width: 1340px;
 }
 a{
   text-decoration: none;
+  color: inherit;
 }
 /* ---------------HEADER------------------ */
 header{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 250px;
   max-width: 1340px; 
   margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  color: #0065FC;
+  justify-content: flex-end;
 }
 /* ----- logo ----- */
 .logo{
-  margin: 0px;
-  margin-top: 28px;
+  margin: 28px 0px;
 }
 .logo_img{
-  max-width: 19.5%;
+  max-width: 98px;
   height: auto;
 }
 /*----- menu ----- */
-.menu {
-  margin: 0px;
-  display: grid ;
-  grid-template-columns: repeat(3,1fr);
-  width: min-content;
-  grid-gap: 17px;
-  float: right;
-  color: #0065FC;
+.menu{
+  display: flex;
+  margin-left: auto;
 }
-.menu li{
+.menu ul{
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+}
+.menu li, .inscription li{
   list-style: none;
-  padding: 30px 25px 0px 25px;
+  padding: 30px 25px 17px 25px;
   border-top: 2px solid white;
 }
-.menu li:hover{
+.menu li:hover,
+.inscription li:hover{
   cursor: pointer;
-  border-top:  solid 2px #0065FC;
-}
-.menu li:link, a:visited{
-  color: inherit;
-}
-.menu1{
   border-top: solid 2px #0065FC;
 }
-.menu2{
+.menu li:link,
+.inscription:link,
+a:visited{
+  color: inherit;
+}
+.menu li:nth-child(1){
+  border-top: 2px solid #0065FC;
+}
+.menu li:nth-child(2){
   color: #000;
 }
-.menu3{
+.inscription{
   font-weight: 700;
+  border-top: 2px solid white;
+  margin-top: -2px;
 }
-/* -------------------MAIN----------------------- */
+.inscription ul{
+  margin: 0px;
+  padding: 0px;
+}
 main,
 aside{
   max-width: 1340px; 
@@ -94,13 +98,15 @@ p{
 .textes h2{  
   margin-left: 2px;
   font-weight: 400;
+  font-size: 16px;
 }
 /*----- barre de recherche ----- */
 .barre_recherche{
   margin-top: 20px;
   height: 50px;
-  width: 420px;
+  max-width: 420px ;
   display: flex;
+  flex-wrap: nowrap;
 }
 .barre_recherche div:nth-child(1){
   width: 52px;
@@ -116,7 +122,7 @@ p{
 .barre_recherche div:nth-child(2){
   height: 46px;
   padding: 0px 18px 0px 18px;
-  width: 198px; 
+  max-width: 198px;
   border: solid #F2F2F2 2px;
 }
 .recherche_input{
@@ -126,73 +132,74 @@ p{
   height: 46px;
   font-weight: 700;
   font-size: 18px;
+  width: 100%;
 }
 /* changement couleur du input */
-::placeholder { 
+.recherche_input::placeholder { 
   color: #000;
-  opacity: 1; /* adaptation pour Firefox */
+  /* adaptation pour Firefox */
+  font-family: 'Raleway', sans-serif;
+  opacity: 1; 
 }
-.barre_recherche div:nth-child(3){
-  width: 124px;
-  height: inherit;
+.rechercher{
+  width: fit-content;
   color: #fff;
   font-weight: 700;
+  padding: 0px 18px;
   background-color: #0065FC;
-  text-align: center;
   line-height: 50px;
   border-radius: 0px 15px 15px 0px;
 }
+.icon_search{
+  display: none;
+}
 /*----- filtres ----- */
 .filtres{
-  margin-top: 33px;
-  font-size: 17px ;
+  margin: 30px 0px 0px 13px;
+  font-size: 18px ;
   font-weight: 700;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  width: min-content;
-  column-gap: 24px; 
-  line-height: 46px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
  }
- .fil_icone{
-  color: #0065FC;
-  font-size: 18px;
-  border-radius: 50%;
-  line-height: 50px;
-  text-align: center;
-  background-color: #DEEBFF;  
-  height: 50px;
-  width: 50px;
-  float: left;
-  transform: translateX(-3px) translateY(-2px);
-}
-.fil_texte{
-  line-height: 46px;
-  transform: translateX(10px) ; 
-}
-.fil_content{
+ .filtres h3{
+   font-size: 18px;
+   margin-right: 12px;
+ }
+ .fil_content{
+  display: flex;
   border: solid #d9d9d9 2px;
-  width: 184px;
-  height: 46px;
   border-radius: 25px;
-}
-.filtres div:nth-child(3){
-  width: 143px;
-}
-.filtres div:nth-child(4){
-  width: 175px;
-}
-.filtres div:nth-child(5){
-  width: 228px;
+  margin: 6px 12px;
 }
 .fil_content:hover{
   box-shadow: 0px 5px 5px 0px rgb(0, 101, 252, 0.5);
   cursor: pointer;
 } 
+ .fil_icone i{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0065FC;
+  font-size: 20px;
+  background-color: #DEEBFF; 
+  border-radius: 50%; 
+  height: 50px;
+  width: 50px;  
+  margin: -2px;
+}
+.fil_texte{
+  align-self: center;
+  padding: 0px 20px 0px 13px;
+}
+.fil_special{
+  display: flex;
+}
 /* ----- ligne texte info ----- */
 .info{
   display: flex;
-  align-content: flex-start;
-  margin: 15px 0px 15px 10px;
+  justify-content: flex-start;
+  margin: 30px 0px 15px 10px;
  }
 #info_icone{
   width: 24px;
@@ -212,13 +219,13 @@ p{
 }
 #info_text h2{
   font-weight: 400;
+  font-size: 16px;
 }
 /* ----- galeries hebergements ----- */
 .partie_1 {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-column-gap: 40px;
-  height: 576px;
+  column-gap: 3%;
 }
 .partie_1 article{
   background-color: #fff;
@@ -234,7 +241,7 @@ p{
 .stars {
   font-size: 12px;
   display: grid;
-  grid-template-columns: repeat(5,1fr);
+  grid-template-columns: repeat(5, 1fr);
   width: min-content;
   column-gap: 2px;
   color: #d9d9d9;
@@ -256,7 +263,7 @@ p{
 #hebergements{
   background-color: #f2f2f2;
   border-radius: 30px;
-  padding: 20px 40px;
+  padding: 15px 40px;
 }
 #hebergements h2{
   margin-bottom: 20px;
@@ -276,39 +283,41 @@ p{
 }
 .afficher_plus{
   font-size: 18px;
-  font-weight: 700;
-  margin-top: 42px;
+  margin-top: 35px;
 }
 /* galerie droite */
 .galerie2{
   display: grid;
   grid-template-rows: repeat(3, 1fr);
-  row-gap: 30px;
   margin-top: 3px;
 }
-.galerie2 > article{
-  height: 134px;
-  min-width: 333px;
+.galerie2 article{
+  max-height: 134px;
+  min-width: 290px;
+  margin-bottom: 33px;
+  position: relative;
 }
 .gal2_titre{
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 10fr 1fr;
   height: min-content;
 }
 .chart_icone{
   font-size: 20px;
-  margin-top: 40px;
+  margin-top: 35px;
   text-align: end;  
 }
 .contenu{
   display: grid;
   grid-template-columns: 127px 1fr;
+}
+.contenu div:nth-child(2){
   position: relative;
 }
-.contenu .stars{
+.stars_gal2{
   position: absolute;
   bottom: 10px;
-  left: 148px;
+  left: 20px;
 }
 #populaires{
   background-color: #f2f2f2;
@@ -316,7 +325,7 @@ p{
   padding: 0px 40px;
 }
 #populaires h2{
-  margin-top: 38px;
+  margin: 34px 0px 17px 10px;
 }
 #populaires h3{
   margin: 17px 0px 14px 21px;
@@ -332,16 +341,16 @@ p{
   object-fit: cover;
   border-radius: 15px 0px 0px 15px;
 }
-
 /* ------------galeries activites---------------- */
 .partie_2{
-  margin-top: 80px;
+  margin: auto;
+  margin-top: 40px;
 }
 .galerie3{
   display: grid;
   grid-template-columns: repeat(4, 1fr) ;
   grid-template-rows: repeat(89, 5px);
-  grid-column-gap: 43px;
+  column-gap: 43px;
 }
 .galerie3 article{
   background-color: #fff;
@@ -434,18 +443,17 @@ p{
 /*------------------FOOTER------------- */
 .footer{
   background-color:#f2f2f2;
-  height: 218px;
+  min-height: 218px;
   width: 100%;
   bottom: 0;
-  margin-top: 60px;
-  
+  margin: 60px auto 0;
 }
 .foot_grid{
   display: grid;
   grid-template-columns: repeat(3,1fr);
   padding-top: 10px;
-  margin: auto; 
   max-width: 1340px;
+  margin: auto;
 }
 .foot_grid h3{
   font-size: 18px;
@@ -456,11 +464,12 @@ p{
   margin-bottom: 18px;
 }
 .foot_li1{
-  padding-left: 0px
+  padding-left: 0px;
 }
 .foot_li2{
-  padding-left: 9px
+  padding-left: 9px;
 }
 .foot_li3{
-  padding-left: 28px
+  padding-left: 28px;
 }
+
