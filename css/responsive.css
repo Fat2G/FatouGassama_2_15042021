@@ -113,12 +113,6 @@
   .logo{
     margin: 28px 20px 0px 20px;
   } 
-  /* .menu{
-    display: flex;
-    order: 1;
-    width: 100%;
-    justify-content: center;
-  } */
   .menu{
     width: 100%;
     order: 1;
@@ -128,15 +122,22 @@
     grid-template-columns: 1fr 1fr;
     text-align: center;
   }
-  .menu li:nth-child(1){
+  .menu li:nth-child(1),
+  .menu li:nth-child(2),
+  .inscription li{
     border-top: none;
+  }
+  .menu li:nth-child(1){
     border-bottom: 3px solid #0065FC;
   }
   .menu li:nth-child(2){
     border-bottom: 3px solid #F2F2F2;
   }
+  .inscription li{
+    border-bottom: 3px solid white;
+  }
   .menu li:hover,
-  .inscription:hover{
+  .inscription li:hover{
     cursor: pointer;
     border-top: none;
     border-bottom: solid 3px #0065FC;

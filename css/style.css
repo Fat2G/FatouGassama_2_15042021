@@ -244,7 +244,7 @@ p{
   column-gap: 2px;
   color: #d9d9d9;
   position: absolute;
-  bottom: 8px;
+  bottom: 10px;
   left: 15px;
 }
 .stars_full 
@@ -267,11 +267,11 @@ p{
   margin-bottom: 20px;
 }
 #hebergements h3{
-  margin: 6px 0px 0px 10px;
+  margin: 8px 0px 0px 10px;
 }
 #hebergements p{
   font-weight: 400;
-  margin: 6px 0px 25px 10px;
+  margin: 7px 0px 25px 10px;
 }
 .hotel img{
   width: 100%;
