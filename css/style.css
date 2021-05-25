@@ -143,10 +143,12 @@ p{
   width: fit-content;
   color: #fff;
   font-weight: 700;
+  font-size: 16px;
   padding: 0px 18px;
   background-color: #0065FC;
   line-height: 50px;
   border-radius: 0px 15px 15px 0px;
+  border: none;
 }
 .icon_search{
   display: none;

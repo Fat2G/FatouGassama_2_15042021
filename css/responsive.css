@@ -157,9 +157,6 @@
   .rechercher{
     display: none;
   }
-  .barre_recherche div:nth-child(2){
-    width: 100%;
-  }
   .icon_search{
     display: inline-block;
     width: fit-content;
@@ -169,6 +166,7 @@
     line-height: 50px;
     border-radius: 15px;
     margin-left: -10px;
+    border: none;
   }
   .filtres{
     font-size: 16px;
